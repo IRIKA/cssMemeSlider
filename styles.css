@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #25282a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #2f00ff;
+}
+
+.screen {
+    width: 100%;
+    height: 70%;
+    border-radius: 2vh;
+    overflow: hidden;
+    display: flex;
+    background-color: aqua;
+}
+
+.content {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    background-color: #ffe600;
+}
+
+.description {
+    width: 60%;
+    height: 100%;
+    font-size: larger;
+    color: aliceblue;
+    background-color: #ff00c8;
+}
