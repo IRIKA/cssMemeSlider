@@ -24,6 +24,10 @@ body {
     border-radius: 2vh;
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    img {
+        border-radius: 3vh;
+    }
 }
 
 .content {
@@ -36,7 +40,7 @@ body {
     width: 60%;
     height: 100%;
     font-size: larger;
-    color: aliceblue;
+    color: #efeff0;
 }
 
 .navigation {
@@ -58,26 +62,26 @@ button {
     width: 40%;
     height: 70%;
     border-radius: 100%;
-    border: 3px solid #0099ff;
-    background-color: #0099ff;
+    border: 3px solid #006eec;
+    background-color: #006eec;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .button-path:hover button {
-    border: 3px solid #ffffff;
-    background-color: #ffffff;
+    border: 3px solid white;
+    background-color: white;
 }
 
 .button-path:active:hover button,
 button:focus:hover {
-    border: 3px solid #ffffff;
+    border: 3px solid white;
     background-color: #ffffff00;
 }
 
 .button-path:active:not(hover) button,
 button:focus:not(hover) {
-    border: 3px solid #0099ff;
+    border: 3px solid #006eec;
     background-color: #ffffff00;
 }
 
