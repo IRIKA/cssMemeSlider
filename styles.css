@@ -16,7 +16,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #2f00ff;
 }
 
 .screen {
@@ -25,14 +24,12 @@ body {
     border-radius: 2vh;
     overflow: hidden;
     display: flex;
-    background-color: aqua;
 }
 
 .content {
     width: 100%;
     height: 25%;
     display: flex;
-    background-color: #ffe600;
 }
 
 .description {
@@ -40,5 +37,84 @@ body {
     height: 100%;
     font-size: larger;
     color: aliceblue;
-    background-color: #ff00c8;
+}
+
+.navigation {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-path {
+    width: 12.5%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+    width: 40%;
+    height: 70%;
+    border-radius: 100%;
+    border: 3px solid #0099ff;
+    background-color: #0099ff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button-path:hover button {
+    border: 3px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.button-path:active:hover button,
+button:focus:hover {
+    border: 3px solid #ffffff;
+    background-color: #ffffff00;
+}
+
+.button-path:active:not(hover) button,
+button:focus:not(hover) {
+    border: 3px solid #0099ff;
+    background-color: #ffffff00;
+}
+
+@media (max-width: 320px) {
+    .main {
+        width: 85%;
+        height: 50%;
+    }
+
+    .screen {
+        height: 50%;
+    }
+
+    .content {
+        height: 35%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        height: 30%;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .button-path {
+        width: 30%;
+        height: 100%;
+    }
+
+    button {
+        height: 50%;
+    }
+
+    .description {
+        height: 30%;
+        width: 100%;
+    }
 }
