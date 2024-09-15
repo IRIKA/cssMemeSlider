@@ -1,0 +1,138 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #25282a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.screen {
+    width: 100%;
+    height: 70%;
+    border-radius: 2vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.screen img {
+    border-radius: 3vh;
+}
+
+.content {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.description {
+    width: 60%;
+    height: 100%;
+    font-size: larger;
+    color: #efeff0;
+}
+
+.navigation {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-path {
+    width: 12.5%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+    width: 40%;
+    height: 70%;
+    border-radius: 100%;
+    border: 3px solid #006eec;
+    background-color: #006eec;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button.first-button {
+    border: 3px solid #006eec;
+    background-color: #ffffff00;
+}
+
+.button-path:hover button {
+    border: 3px solid white;
+    background-color: white;
+}
+
+.button-path:active:hover button,
+button:focus:hover {
+    border: 3px solid white;
+    background-color: #ffffff00;
+}
+
+.button-path:active:not(hover) button,
+button:focus:not(hover) {
+    border: 3px solid #006eec;
+    background-color: #ffffff00;
+}
+
+.text {
+    display: none;
+}
+
+.text.active {
+    display: block;
+}
+
+@media (max-width: 320px) {
+    .main {
+        width: 85%;
+        height: 50%;
+    }
+
+    .screen {
+        height: 50%;
+    }
+
+    .content {
+        height: 35%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        height: 30%;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .button-path {
+        width: 30%;
+        height: 100%;
+    }
+
+    button {
+        height: 50%;
+    }
+
+    .description {
+        height: 30%;
+        width: 100%;
+    }
+}
