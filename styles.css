@@ -25,9 +25,10 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    img {
-        border-radius: 3vh;
-    }
+}
+
+.screen img {
+    border-radius: 3vh;
 }
 
 .content {
@@ -68,6 +69,11 @@ button {
     transition: background-color 0.3s, border-color 0.3s;
 }
 
+button.first-button {
+    border: 3px solid #006eec;
+    background-color: #ffffff00;
+}
+
 .button-path:hover button {
     border: 3px solid white;
     background-color: white;
@@ -83,6 +89,14 @@ button:focus:hover {
 button:focus:not(hover) {
     border: 3px solid #006eec;
     background-color: #ffffff00;
+}
+
+.text {
+    display: none;
+}
+
+.text.active {
+    display: block;
 }
 
 @media (max-width: 320px) {

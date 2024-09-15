@@ -12,19 +12,44 @@
                 <img src="assets/1.jpg" alt="meme" id="meme" />
             </div>
             <div class="content">
-                <div class="description">AAAAAAAAAAAA</div>
+                <div class="description">
+                    <p class="text text-1 active">
+                        Colors with the eyes of developers
+                    </p>
+                    <p class="text text-2">Front-end vs. Back-end</p>
+                    <p class="text text-3">I'm at 3 am</p>
+                    <p class="text text-4">Full stack developer at work</p>
+                </div>
                 <div class="navigation">
                     <div class="button-path">
-                        <button onclick="meme.src='assets/1.jpg'"></button>
+                        <button
+                            data-text="Text for image 1"
+                            onclick="document.querySelector('.active').classList.remove('active');
+                            document.querySelector('.text-1').classList.add('active');
+                            meme.src='assets/1.jpg';"
+                        ></button>
                     </div>
                     <div class="button-path">
-                        <button onclick="meme.src='assets/2.jpg'"></button>
+                        <button
+                            data-text="Text for image 2"
+                            onclick="document.querySelector('.active').classList.remove('active');
+                            document.querySelector('.text-2').classList.add('active');
+                            meme.src='assets/2.jpg'"
+                        ></button>
                     </div>
                     <div class="button-path">
-                        <button onclick="meme.src='assets/3.jpg'"></button>
+                        <button
+                            onclick="document.querySelector('.active').classList.remove('active');
+                            document.querySelector('.text-3').classList.add('active');
+                            meme.src='assets/3.jpg'"
+                        ></button>
                     </div>
                     <div class="button-path">
-                        <button onclick="meme.src='assets/4.jpg'"></button>
+                        <button
+                            onclick="document.querySelector('.active').classList.remove('active');
+                            document.querySelector('.text-4').classList.add('active');
+                            meme.src='assets/4.jpg'"
+                        ></button>
                     </div>
                 </div>
             </div>
